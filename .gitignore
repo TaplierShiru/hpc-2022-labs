@@ -1,3 +1,6 @@
+.Trash-0
+lab0_matmul/code/cythonCpuMatMulWrapper.cpp
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

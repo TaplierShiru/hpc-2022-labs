@@ -1,0 +1,17 @@
+services:
+  cuda:
+    image: nvidia/cuda:11.7.0-devel-rockylinux8
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    volumes:
+      - "./:/home/lab1"
+    ports:
+      - "50000:50000"
