@@ -7,4 +7,5 @@ pip3 install tqdm
 pip3 install matplotlib
 pip3 install seaborn
 pip3 install jupyter
+cd code && make build
 jupyter-notebook --ip=0.0.0.0 --port=50000 --allow-root --no-browser

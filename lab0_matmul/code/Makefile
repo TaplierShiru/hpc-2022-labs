@@ -4,11 +4,12 @@
 
 clean:
 	@echo "Clean..."
-	rm cythonCpuMatMulWrapper.cpp cythonCpuMatMulWrapper.cpython-38-x86_64-linux-gnu.so lib/libmatmul.a && rm -rf build
+	rm cythonCpuMatMulWrapper.cpp cythonCpuMatMulWrapper.cpython-38-x86_64-linux-gnu.so && rm -rf build && rm -rf lib
 	@echo "Clean done!"
 
 build:
 	@echo "Build Cython files..."
+	mkdir lib
 	nvcc --compiler-options -fPIC -lib -odir lib -o lib/libmatmul.a cuda/matmul.cu 
 	python3 setup.py build_ext --inplace
 	@echo "Building of Cython files done!"
