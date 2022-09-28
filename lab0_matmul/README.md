@@ -46,3 +46,10 @@ Gpu acceleration:
 
 # Conclusion
 When dealing with large matrices (shape more than 512 by one side), its better to run it on GPU (faster/efficient compare to CPU), or use OpenMP/many-threads on CPU. In smaller one, its no difference where to run it.
+
+- Cython:
++ C in Python;
++ Can call native code in C/C++ (as in this work we call CUDA and native C++ code);
++ Cython code can be faster as native C/C++;
+- Boilerplate code;
+- C++/C like syntax, link libraries, code compliation and etc...
