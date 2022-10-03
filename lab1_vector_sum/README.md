@@ -1,16 +1,15 @@
-# Lab 0. Gribanov Danil - 6133
+# Lab 1. Gribanov Danil - 6133
 ## Hardware
 - NVIDIA GeForce GTX 1050Ti;
 - Intel(R) i7-8750H;
 
 ## What compare
 
-- Python (1 thread);
 - Numpy dot (OpenMP);
 - Cuda via Cython call (GPU);
-- C++ via Cython call (1 thread);
+- Python (1 thread);
 - Cython (1 thread);
-- Cython paralell (OpenMP, 6 threads);
+- C++ via Cython call (1 thread);
 
 # How to...
 Build docker via
@@ -18,7 +17,7 @@ Build docker via
 docker-compose up --build -d
 ```
 
-Attach to docker shell and go to `/home/lab0` folder.
+Attach to docker shell and go to `/home/lab1` folder.
 
 Inside folder run:
 ```
@@ -45,7 +44,7 @@ Gpu acceleration:
 
 
 # Conclusion
-When dealing with large matrices (shape more than 512 by one side), its better to run it on GPU (faster/efficient compare to CPU), or use OpenMP/many-threads on CPU. In smaller one, its no difference where to run it.
+When dealing with large vectors (shape more than 2^24), its better to run it on with high computer library Numpy (faster/efficient compare to GPU). In smaller one, its no difference where to run it (except python-loops).
 
 - Cython:
     

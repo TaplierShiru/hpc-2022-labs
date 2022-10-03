@@ -12,6 +12,6 @@ services:
               count: 1
               capabilities: [gpu]
     volumes:
-      - "./:/home/lab0"
+      - "./:/home/lab1"
     ports:
       - "50000:50000"
