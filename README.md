@@ -3,4 +3,4 @@
 
 - Lab 1. Matmul. (done);
 - Lab 2. Vector sum. (done);
-- Lab 3. Ray-tracing. ;
+- Lab 3. Ray-tracing. (done);

@@ -1,0 +1,2 @@
+int render_scene(unsigned char* img, const int image_height, const int image_width, const bool isBigScene);
+int render_scene_parallel(unsigned char* img, const int image_height, const int image_width, const bool isBigScene);
